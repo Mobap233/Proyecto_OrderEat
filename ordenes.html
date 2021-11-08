@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/isotipo.png"> 
+    <link rel="stylesheet" href="CSS/paginas.css">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <title>Órdenes - OrderEat</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="IMG/isotipo.png" width="35" height="35">
+                <div class="logo_name">OrderEat</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="ordenes.html">
+                    <i class='bx bx-dish'></i>
+                    <span class="links_name">Órdenes</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="clientes.html">
+                    <i class='bx bx-user-check'></i>
+                    <span class="links_name">Clientes</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="platillos.html">
+                    <i class='bx bx-restaurant'></i>
+                    <span class="links_name">Platillos</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="reportes.html">
+                    <i class='bx bx-receipt'></i>
+                    <span class="links_name">Reporte</span>
+                </a>
+                
+            <li>
+                <a href="config.html">
+                    <i class='bx bx-category'></i>
+                    <span class="links_name">Configuración</span>
+                </a>
+                
+            </li>
+        </ul>
+        <div class="profile_content">
+            <i class='bx bx-log-out' id="log_out"></i>
+        </div>
+    </div>
+    <div class="home_content">
+        <br><br><br>
+        <table class="table_content" cellspacing="0" >
+            <tr>    
+                <td>
+                
+                    <div class="text_open">
+                        
+                       <p class="text_in">Órdenes</p> 
+
+                    <td class="content_cent">
+                        
+                        <button class="button_plus" id="">
+                            <a href="agregarorden.html"><i class='plus bx bx-plus' ></i> </a> 
+                        </button>
+                    </td>
+
+                    </div>
+                    
+                </td>
+
+                <td>
+                    <button class="button_sync" id="open_modal">
+                       <a href="actualizarorden.html"><i class='sync bx bx-sync'></i></a>
+                    </button>
+                    
+                
+                </td>
+
+            </tr>
+
+
+        </table>
+
+        <br><br><br><br><br>
+        <p class="text_ord">NO HAY ÓRDENES PENDIENTES</p>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+    
+</body>
+</html>
